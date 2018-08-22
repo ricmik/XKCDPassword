@@ -216,6 +216,7 @@ function Get-XKCDPassword {
                 $PaddingDigitsBefore = 4
                 $PaddingDigitsAfter = 4
                 $PaddingSymbols = @("!", "@", "$", "%", "^", "&", "*", "+", "=", ":", "|", "~", "?")
+                $PaddingSymbolsBefore = 0
                 $PaddingToLength = 63
             }
             XKCD {
@@ -226,6 +227,8 @@ function Get-XKCDPassword {
                 $SeparatorCharacters = @("-")
                 $PaddingDigitsBefore = 0
                 $PaddingDigitsAfter = 0
+                $PaddingSymbolsBefore = 0
+                $PaddingSymbolsAfter = 0
             }
             Default {
                 $NumberofWords = 3
